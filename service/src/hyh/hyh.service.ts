@@ -1,26 +1,26 @@
-import { Injectable } from '@nestjs/common';
-import { CreateHyhDto } from './dto/create-hyh.dto';
-import { UpdateHyhDto } from './dto/update-hyh.dto';
+import { Injectable } from '@nestjs/common'
+import type { CreateHyhDto } from './dto/create-hyh.dto'
+import type { UpdateHyhDto } from './dto/update-hyh.dto'
 
 @Injectable()
 export class HyhService {
   create(createHyhDto: CreateHyhDto) {
-    return 'This action adds a new hyh';
+    return 'This action adds a new hyh'
   }
 
   findAll() {
-    return `This action returns all hyh`;
+    return `This action returns all hyh`
   }
 
   findOne(id: number) {
-    return `This action returns a #${id} hyh`;
+    return `This action returns a #${id} hyh`
   }
 
   update(id: number, updateHyhDto: UpdateHyhDto) {
-    return `This action updates a #${id} hyh`;
+    return `This action updates a #${id} hyh`
   }
 
   remove(id: number) {
-    return `This action removes a #${id} hyh`;
+    return `This action removes a #${id} hyh`
   }
 }

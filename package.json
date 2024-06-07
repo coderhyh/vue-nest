@@ -13,7 +13,7 @@
     "start": "pnpm -r start",
     "start:web": "pnpm --filter web start",
     "start:service": "pnpm --filter service start",
-    "init": "pnpm i && git init",
+    "init": "pnpm i && git init && pnpm prepare",
     "prepare": "husky install",
     "commit": "git add . && cz",
     "lint": "npm run lint:fix && npm run lint:style",
